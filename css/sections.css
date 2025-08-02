@@ -52,7 +52,7 @@ body.splash-active #footer-placeholder {
 .hero-background-container {
     width: 98%;
     height: 98%;
-    background: url('../media/background.gif') no-repeat center center/cover;
+    background: url('../media/gifs/background.gif') no-repeat center center/cover;
     border: 10px solid #fff;
     border-radius: 40px;
     position: relative;
@@ -606,8 +606,8 @@ body.splash-active #footer-placeholder {
 .what-we-believe {
     padding: 100px 20px;
     text-align: center;
-    background: url('../media/believe.jpg') no-repeat center center/cover;
-    color: #ffffff;
+    background: url('../media/images/believe.jpg') no-repeat center center/cover;
+    color: #000;
 }
 
 .what-we-believe h2 {
