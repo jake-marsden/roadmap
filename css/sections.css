@@ -291,45 +291,6 @@ body.splash-active #footer-placeholder {
 }
 
 
-/* Symptoms Section */
-.symptoms {
-    padding: 100px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.symptoms h2 {
-    font-size: 54px;
-}
-
-.symptoms .subtitle {
-    color: #555;
-    margin-bottom: 50px;
-}
-
-.symptom-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.symptom-item {
-    border: 1px solid #eee;
-    padding: 25px;
-    border-radius: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.symptom-item:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-
 /* Medical Team Section */
 .medical-team {
     display: flex;
@@ -370,18 +331,18 @@ body.splash-active #footer-placeholder {
 }
 
 
-/* Trusted By Section */
-.trusted-by {
+/* Team Section */
+.team {
     padding: 100px 20px;
     text-align: center;
     background-color: #fff;
 }
 
-.trusted-by h2 {
+.team h2 {
     font-size: 54px;
 }
 
-.trusted-by .subtitle {
+.team .subtitle {
     color: #555;
     margin-bottom: 60px;
 }
@@ -417,18 +378,18 @@ body.splash-active #footer-placeholder {
 }
 
 
-/* Social Proof Section */
-.social-proof {
+/* Evidence Section */
+.evidence {
     padding: 100px 20px;
     text-align: center;
     background-color: #fff;
 }
 
-.social-proof h2 {
+.evidence h2 {
     font-size: 54px;
 }
 
-.social-proof .subtitle {
+.evidence .subtitle {
     color: #555;
     margin-bottom: 60px;
 }
@@ -632,4 +593,25 @@ body.splash-active #footer-placeholder {
 #believe-heading {
     font-size: 16px;
     font-weight: 400;
+} 
+
+.lab-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.lab-category {
+    display: flex;
+    align-items: center;
+}
+
+.lab-category span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lab-category:hover .lab-icon {
+    filter: invert(1);
 } 
