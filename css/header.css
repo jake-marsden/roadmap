@@ -1,0 +1,87 @@
+/* Header */
+.main-header {
+    position: fixed;
+    top: 40px;
+    left: 25%;
+    right: 25%;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    z-index: 1000;
+    padding: 15px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-center h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'SF Pro', sans-serif;
+    color: #fff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #aaa;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Specific button styles for the dark header */
+.main-header .btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.main-header .btn-secondary:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main-header .btn-primary {
+    background-color: #1E40AF; /* Dark Blue */
+    color: #fff;
+    border-color: #1E40AF;
+    border-radius: 50px;
+}
+
+.main-header .btn-primary:hover {
+    background-color: #1D4ED8; /* Lighter blue for hover */
+    border-color: #1D4ED8;
+} 
