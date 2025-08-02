@@ -33,12 +33,6 @@ The project is organized into the following directories:
 
 -   `components/`: Contains reusable HTML components like the header and footer.
 -   `css/`: Contains the modular CSS stylesheets.
-    -   `style.css`: The main stylesheet that imports the others.
-    -   `header.css`: Styles for the header component.
-    -   `footer.css`: Styles for the footer component.
-    -   `main.css`: Styles for the main content sections of the page.
 -   `js/`: Contains the JavaScript files.
-    -   `script.js`: Handles dynamic loading of HTML components.
 -   `media/`: Contains all static assets like images and GIFs.
 -   `index.html`: The main entry point of the application.
--   `README.md`: This file. 
