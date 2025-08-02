@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Splash screen logic
+    // Splash screen logic (Temporarily disabled)
+    /*
     const body = document.body;
     body.classList.add('splash-active');
 
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, 1000); // 1 second delay
     }, 3000); // 3 seconds for splash
+    */
 
     // Load header
     fetch("components/header.html")

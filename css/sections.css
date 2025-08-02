@@ -63,35 +63,6 @@ body.splash-active #footer-placeholder {
     opacity: 0.8; /* Final opacity after splash ends */
 }
 
-.heading-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    height: 100vh;
-}
-
-.codex-heading {
-    font-size: 20rem;
-    font-weight: 500;
-    letter-spacing: -0.5rem;
-}
-
-.tighten-letter {
-    margin-left: -0.5rem;
-}
-
-.animated-gradient-text {
-    background-image: linear-gradient(to right, #3b82f6, #06b6d4, #3b82f6);
-    background-size: 200% auto;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: gradient-animation 3s linear infinite;
-    font-weight: 900;
-    font-size: 20rem;
-}
-
 .hero-content {
     max-width: 800px;
     animation: fadeIn 1s ease-in-out;
@@ -607,7 +578,8 @@ body.splash-active #footer-placeholder {
 .what-we-believe {
     padding: 100px 20px;
     text-align: center;
-    background-color: #f8f8f8;
+    background: url('../media/believe.jpg') no-repeat center center/cover;
+    color: #ffffff;
 }
 
 .what-we-believe h2 {
@@ -620,5 +592,4 @@ body.splash-active #footer-placeholder {
     margin: 0 auto 50px;
     font-size: 20px;
     line-height: 1.8;
-    color: #333;
 } 
