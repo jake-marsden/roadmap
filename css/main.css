@@ -58,6 +58,44 @@ h1, h2, h3, h4 {
 
 
 /* Hero Section */
+.hero, .hero-background-container, .hero-content {
+    transition: all 1s ease-in-out;
+}
+
+body.splash-active {
+    overflow: hidden;
+}
+
+body.splash-active .hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+body.splash-active .hero-background-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    opacity: 1; /* Ensure full opacity during splash */
+}
+
+body.splash-active .hero-content {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.splash-active #header-placeholder,
+body.splash-active main > *:not(.hero),
+body.splash-active #footer-placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .hero {
     position: relative;
     height: 100vh;
@@ -81,6 +119,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0.8; /* Final opacity after splash ends */
 }
 
 .heading-section {
