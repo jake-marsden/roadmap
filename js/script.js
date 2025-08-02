@@ -28,5 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer-placeholder").innerHTML = data;
+            // Set video playback speed after footer is loaded
+            const video = document.querySelector('#cxnpl-heading-container video');
+            if (video) {
+                video.playbackRate = 0.7;
+            }
         });
 }); 
