@@ -1,0 +1,78 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .professionals {
+        flex-wrap: wrap;
+    }
+    .membership {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none; /* Simplification for mobile */
+    }
+    .symptom-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .medical-team {
+        flex-direction: column;
+    }
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 48px;
+    }
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lab-category-row {
+        flex-direction: column;
+    }
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .symptom-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .symptom-grid, .social-grid {
+        grid-template-columns: 1fr;
+    }
+    .membership-details, .membership-info {
+        padding: 40px;
+    }
+    .price-tag .amount {
+        font-size: 100px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+} 

@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Splash screen logic (Temporarily disabled)
+    const body = document.body;
+    body.classList.add('splash-active');
+
+    setTimeout(() => {
+        body.classList.remove('splash-active');
+        // Trigger header fade-in after an additional delay
+        setTimeout(() => {
+            const header = document.querySelector('.main-header');
+            if (header) {
+                header.classList.add('visible');
+            }
+        }, 2000); // 1s for hero transition + 1s delay
+    }, 3000); // 3 seconds for splash
+
     // Load header
     fetch("components/header.html")
         .then(response => response.text())
@@ -11,5 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer-placeholder").innerHTML = data;
+            // Set video playback speed after footer is loaded
+            const video = document.querySelector('#cxnpl-heading-container video');
+            if (video) {
+                video.playbackRate = 0.7;
+            }
         });
 }); 
